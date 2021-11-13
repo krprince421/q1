@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ff0000">
+
+    <ImageView
+        android:id="@+id/logoPublic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/firstpic"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/socialMediaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoPublic"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/fb"
+            android:layout_margin="20dp"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/twitter"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/fb"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edittextor"
+        android:layout_below="@+id/socialMediaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_below="@+id/edittextor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username / E-mail Address"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/textViewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="70pt"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"/>
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_margin="10dp"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittextUsername"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/textViewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:inputType="text"
+        android:hint="Username"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edittextPassword"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/edittextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:id="@+id/checboxRememberme"
+        android:layout_below="@+id/edittextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_below="@+id/checboxRememberme"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/textForgotPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Your Password"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="10sp"/>
+
+</RelativeLayout>
